@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "lavender_md_owo_ui"
+version = "${version}"
+displayName = "lavender-md-owo-ui"
+authors = "glisco"
+credits = ""
+
+[[mixins]]
+config = 'lavender-md-owo-ui.mixins.json'
+
+[[dependencies.lavender_md_owo_ui]]
+modId = "neoforge"
+required = true
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.lavender_md_owo_ui]]
+modId = "minecraft"
+required = true
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"

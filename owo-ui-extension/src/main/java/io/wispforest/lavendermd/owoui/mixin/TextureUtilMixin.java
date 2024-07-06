@@ -1,7 +1,7 @@
-package io.wispforest.lavendermd.mixin;
+package io.wispforest.lavendermd.owoui.mixin;
 
 import com.mojang.blaze3d.platform.TextureUtil;
-import io.wispforest.lavendermd.util.TextureSizeLookup;
+import io.wispforest.lavendermd.owoui.util.TextureSizeLookup;
 import net.minecraft.client.texture.NativeImage;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

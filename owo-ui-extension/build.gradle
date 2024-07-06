@@ -1,17 +1,25 @@
-loom {
-    runConfigs.client.ideConfigGenerated = true
-
-    mods {
-        "lavender-md-owo-ui" {
-            sourceSet sourceSets.main
-        }
-    }
-}
-
 sourceSets {
     testmod {
         runtimeClasspath += main.runtimeClasspath
         compileClasspath += main.compileClasspath
+    }
+}
+
+loom {
+    runConfigs.client.ideConfigGenerated = true
+
+    mods {
+        "lavender_md_owo_ui" {
+            sourceSet sourceSets.main
+        }
+
+        "lavender_md_test" {
+            sourceSet sourceSets.testmod
+        }
+
+        "lavender_md" {
+            sourceSet project.rootProject.sourceSets.main
+        }
     }
 }
 
@@ -26,9 +34,25 @@ loom {
     }
 }
 
+processTestmodResources {
+    inputs.property "version", project.version
+
+    filesMatching("META-INF/neoforge.mods.toml") {
+        expand "version": project.version
+    }
+}
+
 dependencies {
-    implementation rootProject.sourceSets.main.output
-    modApi "io.wispforest:owo-lib:${project.owo_version}"
+    implementation project(path: ":", configuration: "namedElements")
+    modApi "io.wispforest:owo-lib-neo:${project.owo_version}"
+
+    // forge weirdness
+    forgeRuntimeLibrary("io.wispforest:endec:0.1.3")
+    forgeRuntimeLibrary("io.wispforest.endec:netty:0.1.2")
+    forgeRuntimeLibrary("io.wispforest.endec:gson:0.1.2")
+    //include api(forgeRuntimeLibrary("io.wispforest.endec:jankson:0.1.2"))
+    forgeRuntimeLibrary("blue.endless:jankson:1.2.2")
+
 
     // --- testmod ---
 

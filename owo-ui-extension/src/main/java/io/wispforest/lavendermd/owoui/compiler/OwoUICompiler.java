@@ -1,7 +1,8 @@
-package io.wispforest.lavendermd.compiler;
+package io.wispforest.lavendermd.owoui.compiler;
 
+import io.wispforest.lavendermd.compiler.MarkdownCompiler;
 import io.wispforest.lavendermd.util.TextBuilder;
-import io.wispforest.lavendermd.util.TextureSizeLookup;
+import io.wispforest.lavendermd.owoui.util.TextureSizeLookup;
 import io.wispforest.owo.ui.component.BoxComponent;
 import io.wispforest.owo.ui.component.Components;
 import io.wispforest.owo.ui.component.LabelComponent;

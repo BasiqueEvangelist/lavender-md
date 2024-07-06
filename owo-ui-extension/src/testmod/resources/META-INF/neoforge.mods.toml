@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "lavender_md_test"
+version = "${version}"
+displayName = "lavender-md-test"
+authors = "glisco"
+credits = ""
+
+[[dependencies.lavender_md_test]]
+modId = "neoforge"
+required = true
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.lavender_md_test]]
+modId = "minecraft"
+required = true
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+#[[dependencies.lavender_md_test]]
+#modId = "lavender_md"
+#required = true
+#versionRange = ""
+#ordering = "NONE"
+#side = "BOTH"

@@ -1,11 +1,11 @@
-package io.wispforest.lavendermd.feature;
+package io.wispforest.lavendermd.owoui.feature;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import io.wispforest.lavendermd.Lexer;
 import io.wispforest.lavendermd.MarkdownFeature;
 import io.wispforest.lavendermd.Parser;
 import io.wispforest.lavendermd.compiler.MarkdownCompiler;
-import io.wispforest.lavendermd.compiler.OwoUICompiler;
+import io.wispforest.lavendermd.owoui.compiler.OwoUICompiler;
 import io.wispforest.owo.ui.component.Components;
 import io.wispforest.owo.ui.container.Containers;
 import io.wispforest.owo.ui.core.HorizontalAlignment;

@@ -1,8 +1,12 @@
 package io.wispforest.lavendermdtest;
 
 import io.wispforest.lavendermd.MarkdownProcessor;
-import io.wispforest.lavendermd.compiler.OwoUICompiler;
+import io.wispforest.lavendermd.owoui.compiler.OwoUICompiler;
 import io.wispforest.lavendermd.feature.*;
+import io.wispforest.lavendermd.owoui.feature.BlockStateFeature;
+import io.wispforest.lavendermd.owoui.feature.EntityFeature;
+import io.wispforest.lavendermd.owoui.feature.ItemStackFeature;
+import io.wispforest.lavendermd.owoui.feature.OwoUITemplateFeature;
 import io.wispforest.owo.ui.base.BaseUIModelScreen;
 import io.wispforest.owo.ui.component.LabelComponent;
 import io.wispforest.owo.ui.component.TextAreaComponent;

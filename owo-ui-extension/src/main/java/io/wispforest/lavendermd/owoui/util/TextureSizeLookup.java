@@ -1,4 +1,4 @@
-package io.wispforest.lavendermd.util;
+package io.wispforest.lavendermd.owoui.util;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
